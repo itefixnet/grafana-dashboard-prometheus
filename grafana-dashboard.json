@@ -346,6 +346,19 @@
       "type": "timeseries"
     },
     {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 15
+      },
+      "id": 11,
+      "panels": [],
+      "title": "TSDB Metrics",
+      "type": "row"
+    },
+    {
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -406,7 +419,7 @@
         "h": 4,
         "w": 24,
         "x": 0,
-        "y": 15
+        "y": 16
       },
       "id": 5,
       "options": {
@@ -494,7 +507,7 @@
         "h": 4,
         "w": 24,
         "x": 0,
-        "y": 19
+        "y": 20
       },
       "id": 6,
       "options": {
@@ -520,6 +533,19 @@
       ],
       "title": "TSDB: Chunks",
       "type": "timeseries"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 24
+      },
+      "id": 12,
+      "panels": [],
+      "title": "Resource Usage",
+      "type": "row"
     },
     {
       "fieldConfig": {
@@ -582,7 +608,7 @@
         "h": 4,
         "w": 24,
         "x": 0,
-        "y": 23
+        "y": 25
       },
       "id": 7,
       "options": {
@@ -670,7 +696,7 @@
         "h": 4,
         "w": 24,
         "x": 0,
-        "y": 27
+        "y": 29
       },
       "id": 8,
       "options": {
@@ -758,7 +784,7 @@
         "h": 4,
         "w": 24,
         "x": 0,
-        "y": 31
+        "y": 33
       },
       "id": 9,
       "options": {
@@ -846,7 +872,7 @@
         "h": 4,
         "w": 24,
         "x": 0,
-        "y": 35
+        "y": 37
       },
       "id": 10,
       "options": {
