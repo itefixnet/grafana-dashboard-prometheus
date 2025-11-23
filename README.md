@@ -1,1 +1,1 @@
-# grafane-dashboard-prometheus
+# grafana-dashboard-prometheus
