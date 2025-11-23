@@ -887,10 +887,6 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
-        },
         "definition": "label_values(up{job=\"prometheus\"}, instance)",
         "hide": 0,
         "includeAll": true,
