@@ -62,7 +62,7 @@
           "values": true
         },
         "showPercentChange": false,
-        "textMode": "value_and_name",
+        "textMode": "name",
         "wideLayout": true
       },
       "pluginVersion": "12.3.0-17728448612",
