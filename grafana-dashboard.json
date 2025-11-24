@@ -333,12 +333,12 @@
       "targets": [
         {
           "expr": "rate(prometheus_target_scrapes_exceeded_sample_limit_total{instance=~\"$instance\"}[5m])",
-          "legendFormat": "Exceeded sample limit",
+          "legendFormat": "Exceeded sample limit - {{scrape_job}}",
           "refId": "A"
         },
         {
           "expr": "rate(prometheus_target_sync_failed_total{instance=~\"$instance\"}[5m])",
-          "legendFormat": "Sync failed",
+          "legendFormat": "Sync failed - {{scrape_job}}",
           "refId": "B"
         }
       ],
