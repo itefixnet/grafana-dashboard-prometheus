@@ -6,31 +6,47 @@ A comprehensive Grafana dashboard designed to monitor Prometheus itself, providi
 
 This dashboard helps you monitor the health and performance of your Prometheus instance(s), including:
 
-- **Uptime Status**: Track Prometheus availability
-- **Scrape Metrics**: Monitor scrape duration, samples scraped, and scrape errors
-- **TSDB Performance**: View time-series database head series and chunks
-- **Resource Usage**: Track memory consumption and CPU time
-- **Rule Evaluation**: Monitor rule evaluation duration
+- **Uptime Status**: Track Prometheus availability with color-coded instance status
+- **Query Performance**: Monitor query duration and concurrent queries
+- **Scrape Metrics**: Track scrape duration and scrape errors
+- **TSDB Metrics**: View time-series database head series, chunks, and health
+- **Resource Usage**: Monitor memory consumption, CPU time, and goroutines
+- **Rule Evaluation**: Track rule evaluation duration and failures
 - **Active Targets**: Keep track of active scrape targets
 
 ### Features
 
 - **Instance Filtering**: Filter metrics by specific Prometheus instance or view all instances together
-- **Real-time Updates**: 10-second refresh interval
+- **Multi-Instance Support**: Display status for multiple Prometheus instances with color-coded indicators
+- **Organized Layout**: Collapsible sections for TSDB Metrics, Resource Usage, and Rules & Targets
+- **Real-time Updates**: 30-second refresh interval
 - **3-Hour Default Time Range**: Configurable time window for historical data
 
 ## Panels Included
 
-1. **Prometheus Up** - Shows if Prometheus is running
-2. **Scrape Duration (seconds)** - Tracks how long scrapes take
-3. **Scrape Samples Scraped** - Number of samples collected per scrape
-4. **Scrape Errors** - Monitors scraping errors
-5. **TSDB: Head Series** - Time-series database head series count
-6. **TSDB: Chunks** - Number of chunks in the TSDB
-7. **Prometheus Memory Usage** - Memory consumption metrics
-8. **Prometheus CPU Time** - CPU usage tracking
-9. **Rule Evaluation Duration** - Time taken to evaluate rules
-10. **Prometheus Active Targets** - Number of active scrape targets
+### Status & Scraping
+1. **Prometheus Up** - Color-coded status showing instance names (green=up, red=down)
+2. **Scrape Duration** - Tracks how long scrapes take in milliseconds
+3. **Scrape Errors** - Monitors exceeded sample limits and sync failures
+
+### Query Performance
+4. **Query Duration (avg)** - Average query execution time
+5. **Concurrent Queries** - Current and maximum concurrent queries
+
+### TSDB Metrics (Collapsed)
+6. **TSDB: Head Series** - Time-series database head series count
+7. **TSDB: Chunks** - Number of chunks in the TSDB
+8. **TSDB: Health & Failures** - Compaction, reload, truncation failures, and WAL corruptions
+
+### Resource Usage (Collapsed)
+9. **Prometheus Memory Usage** - Memory consumption (RSS)
+10. **Prometheus CPU Time** - CPU usage tracking
+11. **Goroutines** - Number of active goroutines
+
+### Rules & Targets (Collapsed)
+12. **Rule Evaluation Duration** - Average time taken to evaluate rules
+13. **Rule Evaluation Failures** - Rate of rule evaluation failures
+14. **Prometheus Active Targets** - Table showing discovered targets by job and config
 
 ## Installation
 
