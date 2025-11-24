@@ -129,7 +129,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "ms"
         },
         "overrides": []
       },
@@ -156,12 +157,12 @@
       "pluginVersion": "12.3.0-17728448612",
       "targets": [
         {
-          "expr": "scrape_duration_seconds{job=\"prometheus\", instance=~\"$instance\"}",
+          "expr": "scrape_duration_seconds{job=\"prometheus\", instance=~\"$instance\"} * 1000",
           "legendFormat": "{{instance}}",
           "refId": "A"
         }
       ],
-      "title": "Scrape Duration (seconds)",
+      "title": "Scrape Duration",
       "type": "timeseries"
     },
     {
