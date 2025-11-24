@@ -68,7 +68,7 @@
       "pluginVersion": "12.3.0-17728448612",
       "targets": [
         {
-          "expr": "max(up{job=\"prometheus\", instance=~\"$instance\"}) by (instance)",
+          "expr": "count(up{job=\"prometheus\", instance=~\"$instance\"} == 1) by (instance) or vector(0)",
           "legendFormat": "{{instance}}",
           "refId": "A"
         }
