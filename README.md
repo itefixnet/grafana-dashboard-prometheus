@@ -1,3 +1,5 @@
+![Prometheus Grafana Dashboard](grafana-dashboard-prometheus.png)
+
 # Grafana Dashboard for Prometheus Monitoring
 
 A comprehensive Grafana dashboard designed to monitor Prometheus itself, providing visibility into Prometheus performance, resource usage, and operational metrics.
